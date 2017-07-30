@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<tilte> Bullseye! Fact </tilte>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		
+	<form method="post" action="http://www.m2r2tect.com/register">
+		<label for="username"> Create a username: </label>
+		<input type="text" id="username" onblur="checkUsername()" />
+		<div id="feedback"></div>
+		<label for="password"> Create a password: </label>
+		<input type="password" id="password" />
+		<input type="submit" value="Sign Up!" " />
+
+	</form>
+		<script type="text/javascript" src="js/event-attributes.js"></script>
+		<script type="text/javascript">
+			function setu(){
+				var textInput;
+				textInput = document.getElementById('username');
+				textInput.focus();
+			}
+			window.addEventListener('load', setup, false);
+		</script>
+
+	</body>
+
+</html>
